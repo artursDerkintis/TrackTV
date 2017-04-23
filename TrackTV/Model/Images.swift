@@ -12,9 +12,13 @@ import SwiftyJSON
 
 /// Poster of movie model
 class Images : Object {
+    
+    /// Poster URL String
     dynamic var mostLikedMoviePosterUrl : String = ""
+    
+    /// Thumnail URL String
     dynamic var mostLikedMovieThumbUrl : String = ""
-    /// Could have many other urls here
+    /// Could have many other urls here...
     
     override class func primaryKey() -> String{
         return "mostLikedMovieThumbUrl"
@@ -22,6 +26,8 @@ class Images : Object {
 }
 
 extension Images{
+    
+    /// Parse JSON response into Images model
     public static func parse(jsonObject : JSON) -> Images?{
         guard let movieThumb = jsonObject[JSONKeys.moviethumb].array,
             let moviePoster = jsonObject[JSONKeys.movieposter].array else{

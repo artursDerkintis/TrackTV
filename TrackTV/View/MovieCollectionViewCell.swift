@@ -8,6 +8,7 @@
 
 import UIKit
 
+///Custom CollectionViewCell
 class MovieCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var thumbImageView: UIImageView!

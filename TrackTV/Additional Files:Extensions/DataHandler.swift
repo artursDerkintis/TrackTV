@@ -19,6 +19,7 @@ struct DataHandler {
     static let fanArtApiKey = "367797a09f5c04b6e06923a50bc3e822"
     static let traktTVApiKey = "0e7e55d561c7e688868a5ea7d2c82b17e59fde95fbc2437e809b1449850d4162"
     
+    /// Using Almofire fetch the trending movies from API
     public static func fetchTrendingMovies(){
         let urlString = "https://api.trakt.tv/movies/trending?page=1&limit=50&extended=full"
         let headers   = ["trakt-api-version":"2","trakt-api-key":DataHandler.traktTVApiKey]
@@ -31,6 +32,7 @@ struct DataHandler {
         }
     }
     
+    /// Parse and store in Realm db received response
     fileprivate static func saveTrendingMovies(jsonObject : JSON){
         
         if let arrayOfMovieObjects = jsonObject.array{
@@ -49,13 +51,17 @@ struct DataHandler {
         }
     }
     
-    
-    public static func fetchImagesForMovie(imdbID : String, completion : ImagesCompleted){
+    /// Seperatly fetch image urls, since trackTV API don't have thier own endpoint for it I had to use Fanart API
+    public static func fetchImagesForMovie(imdbID : String, completion : @escaping ImagesCompleted){
         
         let urlString = "https://webservice.fanart.tv/v3/movies/\(imdbID)?api_key=\(DataHandler.fanArtApiKey)"
         if let url = URL(string: urlString){
             Alamofire.request(url).responseSwiftyJSON(completionHandler: { response in
-                
+                if let jsonObject = response.value{
+                    if let images = Images.parse(jsonObject: jsonObject){
+                        completion(images)
+                    }
+                }
             })
         }
         

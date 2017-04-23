@@ -11,6 +11,7 @@ import RealmSwift
 
 class Genre: Object {
     
+    /// Simple genre name String
     dynamic var genre : String = ""
     
     override class func primaryKey() -> String{
