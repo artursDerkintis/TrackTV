@@ -7,16 +7,33 @@
 //
 
 import UIKit
+import RealmSwift
 
 private let reuseIdentifier = "Cell"
 
 class MovieCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
+    private var movieArray : Results<Movie>?
+    private var notificationToken : NotificationToken?
+    
+    override func loadView() {
+        super.loadView()
+        addRealmNotifcationListener()
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    func addRealmNotifcationListener(){
+        movieArray = Movie.unfilteredResults
+        notificationToken = movieArray?.addNotificationBlock({ [weak self] (_) in
+            self?.collectionView?.reloadData()
+        })
+        
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -35,7 +52,7 @@ class MovieCollectionViewController: UICollectionViewController, UICollectionVie
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return movieArray?.count ?? 0
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -46,7 +63,9 @@ class MovieCollectionViewController: UICollectionViewController, UICollectionVie
     
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.frame.width * 0.5, height: view.frame.height * 0.44)
     }
+    
 }

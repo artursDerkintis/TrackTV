@@ -1,0 +1,25 @@
+{ "watchers" : 167,
+    "movie" : {
+        "year" : 2017,
+        "ids" : {
+            "imdb" : "tt5052448",
+            "tmdb" : 419430,
+            "slug" : "get-out-2017",
+            "trakt" : 264623
+        },
+        "title" : "TestTitle",
+        "tagline" : "Just because you're invited, doesn't mean you're welcome.",
+        "votes" : 3125,
+        "language" : "en",
+        "homepage" : "http:\/\/www.getoutfilm.com\/",
+        "overview" : "TestOverView",
+        "updated_at" : "2017-04-23T08:48:59.000Z",
+        "certification" : "R",
+        "rating" : 7.36448,
+        "genres" : [
+                    "thriller"
+                    ],
+        "trailer" : "http:\/\/youtube.com\/watch?v=sRfnevzM9kQ",
+        "released" : "2017-02-24"
+    }
+}

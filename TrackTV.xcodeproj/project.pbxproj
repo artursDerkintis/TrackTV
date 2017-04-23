@@ -13,13 +13,19 @@
 		E24BD7571EAD24AC0027BDE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24BD7551EAD24AC0027BDE9 /* Main.storyboard */; };
 		E24BD7591EAD24AC0027BDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24BD7581EAD24AC0027BDE9 /* Assets.xcassets */; };
 		E24BD75C1EAD24AC0027BDE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24BD75A1EAD24AC0027BDE9 /* LaunchScreen.storyboard */; };
-		E24BD7671EAD24AC0027BDE9 /* TrackTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7661EAD24AC0027BDE9 /* TrackTVTests.swift */; };
 		E24BD7751EAD2A000027BDE9 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7721EAD2A000027BDE9 /* Genre.swift */; };
 		E24BD7761EAD2A000027BDE9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7731EAD2A000027BDE9 /* Images.swift */; };
 		E24BD7771EAD2A000027BDE9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7741EAD2A000027BDE9 /* Movie.swift */; };
 		E24BD77B1EAD2C340027BDE9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD77A1EAD2C340027BDE9 /* GradientView.swift */; };
 		E24BD77D1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD77C1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift */; };
 		E24BD7801EAD32410027BDE9 /* MovieCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD77F1EAD32410027BDE9 /* MovieCollectionViewController.swift */; };
+		E24BD7831EAD39930027BDE9 /* Realm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7821EAD39930027BDE9 /* Realm+Extensions.swift */; };
+		E24BD7851EAD3C060027BDE9 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7841EAD3C060027BDE9 /* DataHandler.swift */; };
+		E24BD7871EAD3D690027BDE9 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7861EAD3D690027BDE9 /* JSONKeys.swift */; };
+		E24BD78B1EAD44DB0027BDE9 /* movie.json in Resources */ = {isa = PBXBuildFile; fileRef = E24BD78A1EAD44DB0027BDE9 /* movie.json */; };
+		E2B2BCCE1EAD479D0049619E /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2BCCD1EAD479D0049619E /* DataTests.swift */; };
+		E2B2BCD01EAD53040049619E /* fanart.json in Resources */ = {isa = PBXBuildFile; fileRef = E2B2BCCF1EAD53040049619E /* fanart.json */; };
+		E2B2BCD31EAD573D0049619E /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2BCD21EAD573D0049619E /* MovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +52,6 @@
 		E24BD75B1EAD24AC0027BDE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E24BD75D1EAD24AC0027BDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E24BD7621EAD24AC0027BDE9 /* TrackTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E24BD7661EAD24AC0027BDE9 /* TrackTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTVTests.swift; sourceTree = "<group>"; };
 		E24BD7681EAD24AC0027BDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E24BD7721EAD2A000027BDE9 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		E24BD7731EAD2A000027BDE9 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
@@ -54,6 +59,13 @@
 		E24BD77A1EAD2C340027BDE9 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E24BD77C1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		E24BD77F1EAD32410027BDE9 /* MovieCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewController.swift; sourceTree = "<group>"; };
+		E24BD7821EAD39930027BDE9 /* Realm+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Extensions.swift"; sourceTree = "<group>"; };
+		E24BD7841EAD3C060027BDE9 /* DataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
+		E24BD7861EAD3D690027BDE9 /* JSONKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
+		E24BD78A1EAD44DB0027BDE9 /* movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie.json; sourceTree = "<group>"; };
+		E2B2BCCD1EAD479D0049619E /* DataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
+		E2B2BCCF1EAD53040049619E /* fanart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fanart.json; sourceTree = "<group>"; };
+		E2B2BCD21EAD573D0049619E /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				E24BD7511EAD24AC0027BDE9 /* AppDelegate.swift */,
+				E24BD7811EAD39930027BDE9 /* Additional Files / Extensions */,
 				E24BD7711EAD2A000027BDE9 /* Model */,
 				E24BD7791EAD2C340027BDE9 /* View */,
+				E2B2BCD11EAD571A0049619E /* ViewModel */,
 				E24BD77E1EAD321A0027BDE9 /* Controller */,
 				E24BD7781EAD2A0C0027BDE9 /* Resources */,
 			);
@@ -122,8 +136,10 @@
 		E24BD7651EAD24AC0027BDE9 /* TrackTVTests */ = {
 			isa = PBXGroup;
 			children = (
-				E24BD7661EAD24AC0027BDE9 /* TrackTVTests.swift */,
 				E24BD7681EAD24AC0027BDE9 /* Info.plist */,
+				E24BD78A1EAD44DB0027BDE9 /* movie.json */,
+				E2B2BCCF1EAD53040049619E /* fanart.json */,
+				E2B2BCCD1EAD479D0049619E /* DataTests.swift */,
 			);
 			path = TrackTVTests;
 			sourceTree = "<group>";
@@ -164,6 +180,25 @@
 				E24BD77F1EAD32410027BDE9 /* MovieCollectionViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		E24BD7811EAD39930027BDE9 /* Additional Files / Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E24BD7861EAD3D690027BDE9 /* JSONKeys.swift */,
+				E24BD7841EAD3C060027BDE9 /* DataHandler.swift */,
+				E24BD7821EAD39930027BDE9 /* Realm+Extensions.swift */,
+			);
+			name = "Additional Files / Extensions";
+			path = "Additional Files:Extensions";
+			sourceTree = "<group>";
+		};
+		E2B2BCD11EAD571A0049619E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2B2BCD21EAD573D0049619E /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FE6869FE6503334A0F0EDC46 /* Frameworks */ = {
@@ -237,6 +272,7 @@
 					E24BD7611EAD24AC0027BDE9 = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = F7N28ZQT97;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E24BD74D1EAD24AC0027BDE9;
 					};
@@ -276,6 +312,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24BD78B1EAD44DB0027BDE9 /* movie.json in Resources */,
+				E2B2BCD01EAD53040049619E /* fanart.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,7 +421,11 @@
 				E24BD7761EAD2A000027BDE9 /* Images.swift in Sources */,
 				E24BD77B1EAD2C340027BDE9 /* GradientView.swift in Sources */,
 				E24BD7801EAD32410027BDE9 /* MovieCollectionViewController.swift in Sources */,
+				E24BD7851EAD3C060027BDE9 /* DataHandler.swift in Sources */,
 				E24BD77D1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift in Sources */,
+				E24BD7831EAD39930027BDE9 /* Realm+Extensions.swift in Sources */,
+				E24BD7871EAD3D690027BDE9 /* JSONKeys.swift in Sources */,
+				E2B2BCD31EAD573D0049619E /* MovieViewModel.swift in Sources */,
 				E24BD7521EAD24AC0027BDE9 /* AppDelegate.swift in Sources */,
 				E24BD7771EAD2A000027BDE9 /* Movie.swift in Sources */,
 			);
@@ -393,7 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E24BD7671EAD24AC0027BDE9 /* TrackTVTests.swift in Sources */,
+				E2B2BCCE1EAD479D0049619E /* DataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,11 +598,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F7N28ZQT97;
 				INFOPLIST_FILE = TrackTVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.artursderkintis.TrackTVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackTV.app/TrackTV";
 			};
@@ -572,6 +616,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F7N28ZQT97;
 				INFOPLIST_FILE = TrackTVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

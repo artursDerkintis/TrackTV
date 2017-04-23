@@ -12,6 +12,9 @@ target 'TrackTV' do
   target 'TrackTVTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'AlamofireSwiftyJSON', '0.2'
+    pod 'RealmSwift', '2.4.3'
+    pod 'Realm', '2.4.3'
   end
 
 end

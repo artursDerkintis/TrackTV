@@ -18,3 +18,12 @@ class Genre: Object {
     }
     
 }
+
+extension Genre{
+    
+    convenience init(string : String?) {
+        self.init()
+        self.genre = string ?? ""
+    }
+    
+}
