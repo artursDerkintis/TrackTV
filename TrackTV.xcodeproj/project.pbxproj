@@ -18,6 +18,7 @@
 		E24BD7761EAD2A000027BDE9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7731EAD2A000027BDE9 /* Images.swift */; };
 		E24BD7771EAD2A000027BDE9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7741EAD2A000027BDE9 /* Movie.swift */; };
 		E24BD77B1EAD2C340027BDE9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD77A1EAD2C340027BDE9 /* GradientView.swift */; };
+		E24BD77D1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD77C1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		E24BD7731EAD2A000027BDE9 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		E24BD7741EAD2A000027BDE9 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E24BD77A1EAD2C340027BDE9 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		E24BD77C1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				E24BD77A1EAD2C340027BDE9 /* GradientView.swift */,
+				E24BD77C1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				E24BD7751EAD2A000027BDE9 /* Genre.swift in Sources */,
 				E24BD7761EAD2A000027BDE9 /* Images.swift in Sources */,
 				E24BD77B1EAD2C340027BDE9 /* GradientView.swift in Sources */,
+				E24BD77D1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift in Sources */,
 				E24BD7521EAD24AC0027BDE9 /* AppDelegate.swift in Sources */,
 				E24BD7771EAD2A000027BDE9 /* Movie.swift in Sources */,
 			);
