@@ -10,11 +10,13 @@
 		348BDC240FA04FF73369A4DA /* Pods_TrackTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53A1481D323406EB25E00 /* Pods_TrackTVTests.framework */; };
 		538123F7D3B5FD7E28B5D51F /* Pods_TrackTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC252C517D7BF2A39DEB394 /* Pods_TrackTV.framework */; };
 		E24BD7521EAD24AC0027BDE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7511EAD24AC0027BDE9 /* AppDelegate.swift */; };
-		E24BD7541EAD24AC0027BDE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7531EAD24AC0027BDE9 /* ViewController.swift */; };
 		E24BD7571EAD24AC0027BDE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24BD7551EAD24AC0027BDE9 /* Main.storyboard */; };
 		E24BD7591EAD24AC0027BDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24BD7581EAD24AC0027BDE9 /* Assets.xcassets */; };
 		E24BD75C1EAD24AC0027BDE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24BD75A1EAD24AC0027BDE9 /* LaunchScreen.storyboard */; };
 		E24BD7671EAD24AC0027BDE9 /* TrackTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7661EAD24AC0027BDE9 /* TrackTVTests.swift */; };
+		E24BD7751EAD2A000027BDE9 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7721EAD2A000027BDE9 /* Genre.swift */; };
+		E24BD7761EAD2A000027BDE9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7731EAD2A000027BDE9 /* Images.swift */; };
+		E24BD7771EAD2A000027BDE9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7741EAD2A000027BDE9 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 		76E9104E71267C045C66D40E /* Pods-TrackTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests.release.xcconfig"; sourceTree = "<group>"; };
 		E24BD74E1EAD24AC0027BDE9 /* TrackTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24BD7511EAD24AC0027BDE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E24BD7531EAD24AC0027BDE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E24BD7561EAD24AC0027BDE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E24BD7581EAD24AC0027BDE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E24BD75B1EAD24AC0027BDE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +45,9 @@
 		E24BD7621EAD24AC0027BDE9 /* TrackTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24BD7661EAD24AC0027BDE9 /* TrackTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTVTests.swift; sourceTree = "<group>"; };
 		E24BD7681EAD24AC0027BDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E24BD7721EAD2A000027BDE9 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		E24BD7731EAD2A000027BDE9 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		E24BD7741EAD2A000027BDE9 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				E24BD7511EAD24AC0027BDE9 /* AppDelegate.swift */,
-				E24BD7531EAD24AC0027BDE9 /* ViewController.swift */,
-				E24BD7551EAD24AC0027BDE9 /* Main.storyboard */,
-				E24BD7581EAD24AC0027BDE9 /* Assets.xcassets */,
-				E24BD75A1EAD24AC0027BDE9 /* LaunchScreen.storyboard */,
-				E24BD75D1EAD24AC0027BDE9 /* Info.plist */,
+				E24BD7711EAD2A000027BDE9 /* Model */,
+				E24BD7781EAD2A0C0027BDE9 /* Resources */,
 			);
 			path = TrackTV;
 			sourceTree = "<group>";
@@ -117,6 +118,27 @@
 				E24BD7681EAD24AC0027BDE9 /* Info.plist */,
 			);
 			path = TrackTVTests;
+			sourceTree = "<group>";
+		};
+		E24BD7711EAD2A000027BDE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E24BD7721EAD2A000027BDE9 /* Genre.swift */,
+				E24BD7731EAD2A000027BDE9 /* Images.swift */,
+				E24BD7741EAD2A000027BDE9 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E24BD7781EAD2A0C0027BDE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E24BD7551EAD24AC0027BDE9 /* Main.storyboard */,
+				E24BD7581EAD24AC0027BDE9 /* Assets.xcassets */,
+				E24BD75A1EAD24AC0027BDE9 /* LaunchScreen.storyboard */,
+				E24BD75D1EAD24AC0027BDE9 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		FE6869FE6503334A0F0EDC46 /* Frameworks */ = {
@@ -332,8 +354,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E24BD7541EAD24AC0027BDE9 /* ViewController.swift in Sources */,
+				E24BD7751EAD2A000027BDE9 /* Genre.swift in Sources */,
+				E24BD7761EAD2A000027BDE9 /* Images.swift in Sources */,
 				E24BD7521EAD24AC0027BDE9 /* AppDelegate.swift in Sources */,
+				E24BD7771EAD2A000027BDE9 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,6 +573,7 @@
 				E24BD76D1EAD24AC0027BDE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E24BD76E1EAD24AC0027BDE9 /* Build configuration list for PBXNativeTarget "TrackTVTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +582,7 @@
 				E24BD7701EAD24AC0027BDE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
