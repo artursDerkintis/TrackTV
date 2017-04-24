@@ -29,15 +29,6 @@ class DataTests: XCTestCase {
             XCTAssertTrue(movie?.overview == "TestOverView")
         }
     }
-    func testImagesObjectCreation(){
-        if let fanartMockJSONString = self.fanartMockJSONString{
-            let jsonObject = JSON(parseJSON: fanartMockJSONString)
-            let images = Images.parse(jsonObject: jsonObject)
-            XCTAssertNotNil(images)
-            XCTAssertTrue(images?.mostLikedMoviePosterUrl == "testURL")
-            XCTAssertTrue(images?.mostLikedMovieThumbUrl == "testURL")
-        }
-    }
     
     var movieMockJSONString : String?{
         guard let productFilePath = Bundle(for: DataTests.self).path(forResource: "movie", ofType: "json") else{
@@ -50,17 +41,5 @@ class DataTests: XCTestCase {
         }
         return nil
     }
-    var fanartMockJSONString : String?{
-        guard let productFilePath = Bundle(for: DataTests.self).path(forResource: "fanart", ofType: "json") else{
-            return nil
-        }
-        do{
-            return try String(contentsOfFile: productFilePath)
-        }catch let error{
-            print(error)
-        }
-        return nil
-    }
-    
     
 }

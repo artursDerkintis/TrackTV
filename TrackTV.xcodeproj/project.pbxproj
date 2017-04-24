@@ -24,7 +24,6 @@
 		E24BD78B1EAD44DB0027BDE9 /* movie.json in Resources */ = {isa = PBXBuildFile; fileRef = E24BD78A1EAD44DB0027BDE9 /* movie.json */; };
 		E2A588881EAE0AD000036A84 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A588871EAE0AD000036A84 /* MovieViewController.swift */; };
 		E2B2BCCE1EAD479D0049619E /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2BCCD1EAD479D0049619E /* DataTests.swift */; };
-		E2B2BCD01EAD53040049619E /* fanart.json in Resources */ = {isa = PBXBuildFile; fileRef = E2B2BCCF1EAD53040049619E /* fanart.json */; };
 		E2B2BCD31EAD573D0049619E /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2BCD21EAD573D0049619E /* MovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +63,6 @@
 		E24BD78A1EAD44DB0027BDE9 /* movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie.json; sourceTree = "<group>"; };
 		E2A588871EAE0AD000036A84 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
 		E2B2BCCD1EAD479D0049619E /* DataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
-		E2B2BCCF1EAD53040049619E /* fanart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fanart.json; sourceTree = "<group>"; };
 		E2B2BCD21EAD573D0049619E /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +136,6 @@
 			children = (
 				E24BD7681EAD24AC0027BDE9 /* Info.plist */,
 				E24BD78A1EAD44DB0027BDE9 /* movie.json */,
-				E2B2BCCF1EAD53040049619E /* fanart.json */,
 				E2B2BCCD1EAD479D0049619E /* DataTests.swift */,
 			);
 			path = TrackTVTests;
@@ -313,7 +310,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24BD78B1EAD44DB0027BDE9 /* movie.json in Resources */,
-				E2B2BCD01EAD53040049619E /* fanart.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
