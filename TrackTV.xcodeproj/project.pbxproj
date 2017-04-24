@@ -14,7 +14,6 @@
 		E24BD7591EAD24AC0027BDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24BD7581EAD24AC0027BDE9 /* Assets.xcassets */; };
 		E24BD75C1EAD24AC0027BDE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24BD75A1EAD24AC0027BDE9 /* LaunchScreen.storyboard */; };
 		E24BD7751EAD2A000027BDE9 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7721EAD2A000027BDE9 /* Genre.swift */; };
-		E24BD7761EAD2A000027BDE9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7731EAD2A000027BDE9 /* Images.swift */; };
 		E24BD7771EAD2A000027BDE9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7741EAD2A000027BDE9 /* Movie.swift */; };
 		E24BD77B1EAD2C340027BDE9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD77A1EAD2C340027BDE9 /* GradientView.swift */; };
 		E24BD77D1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD77C1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift */; };
@@ -54,7 +53,6 @@
 		E24BD7621EAD24AC0027BDE9 /* TrackTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24BD7681EAD24AC0027BDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E24BD7721EAD2A000027BDE9 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
-		E24BD7731EAD2A000027BDE9 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		E24BD7741EAD2A000027BDE9 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		E24BD77A1EAD2C340027BDE9 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		E24BD77C1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				E24BD7721EAD2A000027BDE9 /* Genre.swift */,
-				E24BD7731EAD2A000027BDE9 /* Images.swift */,
 				E24BD7741EAD2A000027BDE9 /* Movie.swift */,
 			);
 			path = Model;

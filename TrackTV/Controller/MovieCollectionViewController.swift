@@ -59,8 +59,10 @@ class MovieCollectionViewController: UICollectionViewController, UICollectionVie
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? MovieCollectionViewCell else{
             return UICollectionViewCell()
         }
-        
-    
+        cell.movieViewModel = nil
+        if let movie = movieArray?[indexPath.row]{
+            cell.movieViewModel = MovieViewModel(movie: movie)
+        }
         return cell
     }
     

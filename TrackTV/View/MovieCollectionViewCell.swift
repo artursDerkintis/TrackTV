@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AlamofireImage
+
 
 ///Custom CollectionViewCell
 class MovieCollectionViewCell: UICollectionViewCell {
@@ -14,5 +16,22 @@ class MovieCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var thumbImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
+    
+    var movieViewModel : MovieViewModel? {
+        didSet{
+            if let thumbnailURL = movieViewModel?.posterURL{
+                thumbImageView.af_setImage(withURL: thumbnailURL)
+            }
+            if let title = movieViewModel?.title,
+                let rating = movieViewModel?.ratingString{
+                titleLabel.text = title
+                ratingLabel.text = rating
+                return
+            }
+            thumbImageView.image = nil
+            titleLabel.text = ""
+            ratingLabel.text = ""
+        }
+    }
     
 }

@@ -6,6 +6,7 @@ target 'TrackTV' do
   use_frameworks!
 
   # Pods for TrackTV
+    pod 'AlamofireImage', '3.2'
     pod 'AlamofireSwiftyJSON', '0.2'
     pod 'RealmSwift', '2.4.3'
     pod 'Realm', '2.4.3'

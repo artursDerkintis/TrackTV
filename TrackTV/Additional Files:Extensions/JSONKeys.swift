@@ -18,6 +18,7 @@ struct JSONKeys{
     static let year = "year"
     static let ids = "ids"
     static let imdb = "imdb"
+    static let tmdb = "tmdb"
     static let title = "title"
     static let tagline = "tagline"
     static let overview = "overview"
@@ -28,9 +29,8 @@ struct JSONKeys{
     static let trailer = "trailer"
     static let genres = "genres"
     
-    /// FanArt responses
-    static let movieposter = "movieposter"
-    static let moviethumb = "moviethumb"
-    static let url = "url"
+    /// TMDB responses
+    static let posters = "posters"
+    static let filePath = "file_path"
     
 }
