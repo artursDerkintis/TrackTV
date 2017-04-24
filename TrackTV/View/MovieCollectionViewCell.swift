@@ -17,6 +17,7 @@ class MovieCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     
+    /// View model for this cell
     var movieViewModel : MovieViewModel? {
         didSet{
             if let thumbnailURL = movieViewModel?.posterURL{

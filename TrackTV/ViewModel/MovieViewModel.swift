@@ -44,14 +44,17 @@ class MovieViewModel {
         return genres
     }
     
+    /// The year of release
     var year : String {
         return "\(movie?.year ?? 1970)"
     }
     
+    /// Url for website of this movie
     var homepageURL : URL? {
         return URL(string: movie?.homepage ?? "")
     }
     
+    /// Url for trailer of this movie
     var trailerURL : URL? {
         return URL(string: movie?.trailer ?? "")
     }

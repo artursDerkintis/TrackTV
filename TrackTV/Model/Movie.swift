@@ -43,7 +43,7 @@ class Movie: Object {
     var genres : List<Genre> = List<Genre>()
     
     
-    /// Poster URL String
+    /// Poster file path for tmdb
     dynamic var filePathForPoster : String = ""
     
     
@@ -55,6 +55,8 @@ class Movie: Object {
 
 extension Movie{
     
+    
+    /// Parses valid JSON object into Movie model
     static func parse(jsonObject : JSON) -> Movie?{
         let movieObject     = jsonObject[JSONKeys.movie]
         guard let watchers  = jsonObject[JSONKeys.watchers].int,
@@ -90,14 +92,16 @@ extension Movie{
         return movie
     }
     
+    /// Kicks of API call for images paths
     func getImages(){
         DataHandler.fetchImagesForMovie(tmdbID: tmdbID)
     }
     
+    /// Returns all movies unfiltered
     public static var unfilteredResults : Results<Movie>? {
         return RealmHelper.realm?.objects(Movie.self)
     }
-    
+    /// Returns movie object from db filtered by tmdbID
     public static func movie(tmdbID : Int) -> Movie? {
         return RealmHelper.realm?.objects(Movie.self).filter("tmdbID == \(tmdbID)").first
     }

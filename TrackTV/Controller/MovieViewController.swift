@@ -31,6 +31,7 @@ class MovieViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /// Once view is live set all the values
         if let movieViewModel = movieViewModel{
             if let posterURL = movieViewModel.posterURL{
                 posterImageView.af_setImage(withURL: posterURL)
@@ -44,18 +45,22 @@ class MovieViewController: UIViewController {
         }
     }
     
+    /// Open website of the movie
     @IBAction func openHomepage(_ sender: Any) {
         if let url = movieViewModel?.homepageURL{
             openURL(url: url)
         }
     }
     
+    
+    /// Open trailer of this movie
     @IBAction func openTrailer(_ sender: Any) {
         if let url = movieViewModel?.trailerURL{
             openURL(url: url)
         }
     }
     
+    /// Opens the url _official_ way 
     func openURL(url : URL){
         let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true, completion: nil)
