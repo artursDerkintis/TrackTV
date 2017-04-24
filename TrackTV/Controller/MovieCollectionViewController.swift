@@ -34,15 +34,11 @@ class MovieCollectionViewController: UICollectionViewController, UICollectionVie
         
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if let currentlySelectedIndexPath = self.collectionView?.indexPathsForSelectedItems?.first, let movie = movieArray?[currentlySelectedIndexPath.row], let destinationVC = segue.destination as? MovieViewController{
+            destinationVC.tmdbID = movie.tmdbID
+        }
     }
-    */
 
     // MARK: UICollectionViewDataSource
 

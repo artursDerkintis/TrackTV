@@ -40,7 +40,7 @@ class MovieViewModel {
     /// Returns list of genres this movie belongs to
     var genres : String {
         var genres : String = ""
-        movie?.genres.forEach { genres.append(", \($0.genre.capitalized)") }
+        movie?.genres.forEach { genres.append("\($0.genre.capitalized)  ") }
         return genres
     }
     
