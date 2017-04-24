@@ -43,6 +43,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E2A5888E1EAE2B4B00036A84"
+               BuildableName = "TrackTVUITests.xctest"
+               BlueprintName = "TrackTVUITests"
+               ReferencedContainer = "container:TrackTV.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E24BD7611EAD24AC0027BDE9"
+               BuildableName = "TrackTVTests.xctest"
+               BlueprintName = "TrackTVTests"
+               ReferencedContainer = "container:TrackTV.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

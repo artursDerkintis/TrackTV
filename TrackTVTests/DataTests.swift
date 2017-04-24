@@ -21,7 +21,7 @@ class DataTests: XCTestCase {
     }
     
     func testMovieObjectCreation() {
-        if let movieMockJSONString = self.movieMockJSONString{
+        if let movieMockJSONString = movieMockJSONString{
             let jsonObject = JSON(parseJSON: movieMockJSONString)
             let movie = Movie.parse(jsonObject: jsonObject)
             XCTAssertNotNil(movie)
@@ -30,16 +30,34 @@ class DataTests: XCTestCase {
         }
     }
     
-    var movieMockJSONString : String?{
-        guard let productFilePath = Bundle(for: DataTests.self).path(forResource: "movie", ofType: "json") else{
-            return nil
+    func testMovieViewModel(){
+        if let movieMockJSONString = movieMockJSONString{
+            let jsonObject = JSON(parseJSON: movieMockJSONString)
+            if let movie = Movie.parse(jsonObject: jsonObject){
+                let movieVM = MovieViewModel(movie: movie)
+                XCTAssertEqual(movieVM.ratingString, "⭐️ 7.4")
+                XCTAssertEqual(movieVM.genres, "Testgenre  ")
+                XCTAssertEqual(movieVM.homepageURL, URL(string : "http://www.getoutfilm.com/"))
+                XCTAssertEqual(movieVM.trailerURL, URL(string : "http://youtube.com/watch?v=sRfnevzM9kQ"))
+                XCTAssertEqual(movieVM.summary, "TestOverView")
+                XCTAssertEqual(movieVM.year, "2017")
+                XCTAssertEqual(movieVM.tagline, "Test tagline")
+                XCTAssertEqual(movieVM.title, "TestTitle")
+                
+            }
         }
-        do{
-            return try String(contentsOfFile: productFilePath)
-        }catch let error{
-            print(error)
-        }
-        return nil
     }
     
+}
+
+public var movieMockJSONString : String?{
+    guard let productFilePath = Bundle(for: DataTests.self).path(forResource: "movie", ofType: "json") else{
+        return nil
+    }
+    do{
+        return try String(contentsOfFile: productFilePath)
+    }catch let error{
+        print(error)
+    }
+    return nil
 }
