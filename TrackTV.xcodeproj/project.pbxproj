@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		348BDC240FA04FF73369A4DA /* Pods_TrackTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53A1481D323406EB25E00 /* Pods_TrackTVTests.framework */; };
 		538123F7D3B5FD7E28B5D51F /* Pods_TrackTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC252C517D7BF2A39DEB394 /* Pods_TrackTV.framework */; };
+		E216B5DB1EB748A000675BCA /* MovieCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216B5DA1EB748A000675BCA /* MovieCollectionViewModel.swift */; };
 		E24BD7521EAD24AC0027BDE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7511EAD24AC0027BDE9 /* AppDelegate.swift */; };
 		E24BD7571EAD24AC0027BDE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24BD7551EAD24AC0027BDE9 /* Main.storyboard */; };
 		E24BD7591EAD24AC0027BDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24BD7581EAD24AC0027BDE9 /* Assets.xcassets */; };
@@ -19,7 +20,6 @@
 		E24BD77D1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD77C1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift */; };
 		E24BD7801EAD32410027BDE9 /* MovieCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD77F1EAD32410027BDE9 /* MovieCollectionViewController.swift */; };
 		E24BD7831EAD39930027BDE9 /* Realm+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7821EAD39930027BDE9 /* Realm+Extensions.swift */; };
-		E24BD7851EAD3C060027BDE9 /* DataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7841EAD3C060027BDE9 /* DataHandler.swift */; };
 		E24BD7871EAD3D690027BDE9 /* JSONKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7861EAD3D690027BDE9 /* JSONKeys.swift */; };
 		E24BD78B1EAD44DB0027BDE9 /* movie.json in Resources */ = {isa = PBXBuildFile; fileRef = E24BD78A1EAD44DB0027BDE9 /* movie.json */; };
 		E2A588881EAE0AD000036A84 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A588871EAE0AD000036A84 /* MovieViewController.swift */; };
@@ -53,6 +53,7 @@
 		45F53A1481D323406EB25E00 /* Pods_TrackTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE2868BC6F0D3C816732E76 /* Pods-TrackTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackTV/Pods-TrackTV.release.xcconfig"; sourceTree = "<group>"; };
 		76E9104E71267C045C66D40E /* Pods-TrackTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		E216B5DA1EB748A000675BCA /* MovieCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewModel.swift; sourceTree = "<group>"; };
 		E24BD74E1EAD24AC0027BDE9 /* TrackTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24BD7511EAD24AC0027BDE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24BD7561EAD24AC0027BDE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		E24BD77C1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		E24BD77F1EAD32410027BDE9 /* MovieCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewController.swift; sourceTree = "<group>"; };
 		E24BD7821EAD39930027BDE9 /* Realm+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Realm+Extensions.swift"; sourceTree = "<group>"; };
-		E24BD7841EAD3C060027BDE9 /* DataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHandler.swift; sourceTree = "<group>"; };
 		E24BD7861EAD3D690027BDE9 /* JSONKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKeys.swift; sourceTree = "<group>"; };
 		E24BD78A1EAD44DB0027BDE9 /* movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie.json; sourceTree = "<group>"; };
 		E2A588871EAE0AD000036A84 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
@@ -206,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				E24BD7861EAD3D690027BDE9 /* JSONKeys.swift */,
-				E24BD7841EAD3C060027BDE9 /* DataHandler.swift */,
 				E24BD7821EAD39930027BDE9 /* Realm+Extensions.swift */,
 			);
 			name = "Additional Files / Extensions";
@@ -226,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				E2B2BCD21EAD573D0049619E /* MovieViewModel.swift */,
+				E216B5DA1EB748A000675BCA /* MovieCollectionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -478,10 +478,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24BD7751EAD2A000027BDE9 /* Genre.swift in Sources */,
+				E216B5DB1EB748A000675BCA /* MovieCollectionViewModel.swift in Sources */,
 				E24BD77B1EAD2C340027BDE9 /* GradientView.swift in Sources */,
 				E2A588881EAE0AD000036A84 /* MovieViewController.swift in Sources */,
 				E24BD7801EAD32410027BDE9 /* MovieCollectionViewController.swift in Sources */,
-				E24BD7851EAD3C060027BDE9 /* DataHandler.swift in Sources */,
 				E24BD77D1EAD2EB00027BDE9 /* MovieCollectionViewCell.swift in Sources */,
 				E24BD7831EAD39930027BDE9 /* Realm+Extensions.swift in Sources */,
 				E24BD7871EAD3D690027BDE9 /* JSONKeys.swift in Sources */,
@@ -764,6 +764,7 @@
 				E2A588981EAE2B4B00036A84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

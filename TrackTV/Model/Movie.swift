@@ -7,8 +7,10 @@
 //
 
 import UIKit
-import RealmSwift
+import Alamofire
 import SwiftyJSON
+import AlamofireSwiftyJSON
+import RealmSwift
 
 
 /// Movie model
@@ -94,7 +96,7 @@ extension Movie{
     
     /// Kicks of API call for images paths
     func getImages(){
-        DataHandler.fetchImagesForMovie(tmdbID: tmdbID)
+        Movie.fetchImagesForMovie(tmdbID: tmdbID)
     }
     
     /// Returns all movies unfiltered
@@ -105,4 +107,29 @@ extension Movie{
     public static func movie(tmdbID : Int) -> Movie? {
         return RealmHelper.realm?.objects(Movie.self).filter("tmdbID == \(tmdbID)").first
     }
+    
+    /// Seperatly fetch image urls, since trackTV API don't have thier own endpoint for it I had to use Fanart API
+    private static func fetchImagesForMovie(tmdbID : Int){
+        let tmdbApiKey = "f4e1e1800da1176bb15bc0b4c3b3a575"
+        let urlString = "https://api.themoviedb.org/3/movie/\(tmdbID)/images?api_key=\(tmdbApiKey)"
+        if let url = URL(string: urlString){
+            Alamofire.request(url).responseSwiftyJSON(completionHandler: { response in
+                RealmHelper.realmThread.async {
+                    if let jsonObject = response.value{
+                        if let posters = jsonObject[JSONKeys.posters].array{
+                            if let filePath = posters[0][JSONKeys.filePath].string{
+                                let movie = Movie.movie(tmdbID: tmdbID)
+                                RealmHelper.safeWrite {
+                                    movie?.filePathForPoster = filePath
+                                }
+                            }
+                        }
+                    }
+                }
+            })
+        }
+        
+    }
+
 }
+

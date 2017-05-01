@@ -64,4 +64,8 @@ class MovieViewModel {
         self.init()
         self.movie = movie
     }
+    
+    var tmdbID : Int{
+        return movie?.tmdbID ?? 0
+    }
 }
