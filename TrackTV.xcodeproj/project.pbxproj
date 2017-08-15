@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		348BDC240FA04FF73369A4DA /* Pods_TrackTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53A1481D323406EB25E00 /* Pods_TrackTVTests.framework */; };
+		1D42B748868769C33226F0F7 /* Pods_TrackTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F53A1481D323406EB25E00 /* Pods_TrackTVTests.framework */; };
 		538123F7D3B5FD7E28B5D51F /* Pods_TrackTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC252C517D7BF2A39DEB394 /* Pods_TrackTV.framework */; };
 		E216B5DB1EB748A000675BCA /* MovieCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216B5DA1EB748A000675BCA /* MovieCollectionViewModel.swift */; };
 		E24BD7521EAD24AC0027BDE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24BD7511EAD24AC0027BDE9 /* AppDelegate.swift */; };
@@ -47,12 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0688605B2FD7B76B5E2CF949 /* Pods-TrackTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests.release.xcconfig"; sourceTree = "<group>"; };
 		2A8C26DA0E3BDF60FA42B662 /* Pods-TrackTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackTV/Pods-TrackTV.debug.xcconfig"; sourceTree = "<group>"; };
 		2FC252C517D7BF2A39DEB394 /* Pods_TrackTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D9690608E99EACB95FF3451 /* Pods-TrackTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		45F53A1481D323406EB25E00 /* Pods_TrackTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DE2868BC6F0D3C816732E76 /* Pods-TrackTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackTV/Pods-TrackTV.release.xcconfig"; sourceTree = "<group>"; };
-		76E9104E71267C045C66D40E /* Pods-TrackTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		747FB2B38830AD923E1A98AD /* Pods-TrackTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E216B5DA1EB748A000675BCA /* MovieCollectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewModel.swift; sourceTree = "<group>"; };
 		E24BD74E1EAD24AC0027BDE9 /* TrackTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24BD7511EAD24AC0027BDE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				348BDC240FA04FF73369A4DA /* Pods_TrackTVTests.framework in Frameworks */,
+				1D42B748868769C33226F0F7 /* Pods_TrackTVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +111,8 @@
 			children = (
 				2A8C26DA0E3BDF60FA42B662 /* Pods-TrackTV.debug.xcconfig */,
 				6DE2868BC6F0D3C816732E76 /* Pods-TrackTV.release.xcconfig */,
-				3D9690608E99EACB95FF3451 /* Pods-TrackTVTests.debug.xcconfig */,
-				76E9104E71267C045C66D40E /* Pods-TrackTVTests.release.xcconfig */,
+				747FB2B38830AD923E1A98AD /* Pods-TrackTVTests.debug.xcconfig */,
+				0688605B2FD7B76B5E2CF949 /* Pods-TrackTVTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -266,12 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E24BD76E1EAD24AC0027BDE9 /* Build configuration list for PBXNativeTarget "TrackTVTests" */;
 			buildPhases = (
-				1743D107405A546AB80254EF /* [CP] Check Pods Manifest.lock */,
+				D18527844D00AFD5F4BBDE42 /* [CP] Check Pods Manifest.lock */,
 				E24BD75E1EAD24AC0027BDE9 /* Sources */,
 				E24BD75F1EAD24AC0027BDE9 /* Frameworks */,
 				E24BD7601EAD24AC0027BDE9 /* Resources */,
-				05EF68C35DE044D468AA20BC /* [CP] Embed Pods Frameworks */,
-				0E94B786946F0AA28D5CFD25 /* [CP] Copy Pods Resources */,
+				E2DA2577B085C62A93BCCDEF /* [CP] Embed Pods Frameworks */,
+				4D734F310038FD98C1E6F053 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -380,51 +380,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05EF68C35DE044D468AA20BC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0E94B786946F0AA28D5CFD25 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1743D107405A546AB80254EF /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		2BA25481A3D87CAC4E9F149B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,15 +395,43 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackTV/Pods-TrackTV-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6AB6FD8D940B829982BC1B87 /* [CP] Embed Pods Frameworks */ = {
+		4D734F310038FD98C1E6F053 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AB6FD8D940B829982BC1B87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrackTV/Pods-TrackTV-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireSwiftyJSON/AlamofireSwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireSwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -461,13 +444,62 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrackTV-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D18527844D00AFD5F4BBDE42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrackTVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2DA2577B085C62A93BCCDEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireSwiftyJSON/AlamofireSwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireSwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrackTVTests/Pods-TrackTVTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -546,6 +578,7 @@
 		E24BD7691EAD24AC0027BDE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -597,6 +630,7 @@
 		E24BD76A1EAD24AC0027BDE9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -642,6 +676,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2A8C26DA0E3BDF60FA42B662 /* Pods-TrackTV.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F7N28ZQT97;
 				INFOPLIST_FILE = TrackTV/Info.plist;
@@ -656,6 +691,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DE2868BC6F0D3C816732E76 /* Pods-TrackTV.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F7N28ZQT97;
 				INFOPLIST_FILE = TrackTV/Info.plist;
@@ -668,9 +704,9 @@
 		};
 		E24BD76F1EAD24AC0027BDE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D9690608E99EACB95FF3451 /* Pods-TrackTVTests.debug.xcconfig */;
+			baseConfigurationReference = 747FB2B38830AD923E1A98AD /* Pods-TrackTVTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F7N28ZQT97;
@@ -686,9 +722,9 @@
 		};
 		E24BD7701EAD24AC0027BDE9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76E9104E71267C045C66D40E /* Pods-TrackTVTests.release.xcconfig */;
+			baseConfigurationReference = 0688605B2FD7B76B5E2CF949 /* Pods-TrackTVTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F7N28ZQT97;

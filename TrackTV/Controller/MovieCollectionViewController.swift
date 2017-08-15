@@ -13,7 +13,7 @@ private let reuseIdentifier = "Cell"
 
 class MovieCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
-    var viewModel : MovieCollectionViewModel = MovieCollectionViewModel()
+    let viewModel = MovieCollectionViewModel()
     
     override func loadView() {
         super.loadView()
